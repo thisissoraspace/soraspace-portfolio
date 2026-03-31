@@ -136,37 +136,37 @@ export default function SoraSpacePortfolio() {
           transition={{ duration: 0.8 }}
           className="relative z-10 w-full max-w-6xl"
         >
-          <div className="grid items-center gap-10 sm:gap-12 lg:grid-cols-[minmax(0,1.02fr)_minmax(320px,0.98fr)] lg:gap-20">
+          <div className="grid items-center gap-10 sm:gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(340px,0.96fr)] lg:gap-20">
             <div className="text-center lg:text-left">
               <div className="inline-flex max-w-full rounded-full border border-white/12 bg-white/[0.06] px-3 py-2 text-[10px] font-medium uppercase tracking-[0.26em] text-white/60 shadow-[0_10px_30px_rgba(0,0,0,0.12)] backdrop-blur-xl sm:px-4 sm:text-[11px] sm:tracking-[0.32em]">
                 SoraSpace Digital Studio
               </div>
-              <p className="mt-7 text-[10px] uppercase tracking-[0.34em] text-white/45 sm:mt-8 sm:text-xs sm:tracking-[0.4em]">
+              <p className="mt-8 text-[10px] uppercase tracking-[0.34em] text-white/45 sm:mt-9 sm:text-xs sm:tracking-[0.4em]">
                 Built with intent.
               </p>
-              <h1 className="mt-4 text-[2.6rem] font-semibold leading-[0.94] tracking-[-0.055em] sm:mt-5 sm:text-5xl md:text-[3.8rem] lg:text-[5.15rem]">
+              <h1 className="mx-auto mt-3 max-w-3xl text-[2.75rem] font-semibold leading-[0.92] tracking-[-0.06em] sm:mt-4 sm:text-[3.6rem] md:text-[4.1rem] lg:mx-0 lg:max-w-2xl lg:text-[5.15rem]">
                 Dark, minimal websites with a premium point of view.
               </h1>
-              <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-white/68 sm:mt-6 sm:text-base sm:leading-8 lg:mx-0 lg:max-w-lg lg:text-[1.02rem]">
+              <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/68 sm:mt-7 sm:text-base sm:leading-8 lg:mx-0 lg:max-w-lg lg:text-[1.02rem]">
                 Crafted for brands that need clarity, restraint, and stronger visual trust across mobile, tablet, and desktop.
               </p>
 
-              <div className="mt-8 flex flex-col items-stretch justify-center gap-3 sm:mt-9 sm:flex-row sm:flex-wrap lg:justify-start">
+              <div className="mt-10 flex flex-col items-stretch justify-center gap-3 sm:mt-11 sm:flex-row sm:flex-wrap lg:justify-start">
                 <a
                   href="#projects"
-                  className="inline-flex min-h-12 w-full items-center justify-center rounded-full bg-white px-6 py-3 text-center text-sm font-semibold text-[#001D34] shadow-[0_16px_40px_rgba(255,255,255,0.14)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#f5f7fb] sm:w-auto"
+                  className="inline-flex min-h-12 w-full items-center justify-center rounded-full border border-white/90 bg-white px-6 py-3 text-center text-sm font-semibold text-[#001D34] shadow-[0_18px_45px_rgba(255,255,255,0.14)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#f7f9fc] sm:w-auto sm:px-7"
                 >
                   View Work
                 </a>
                 <a
                   href="#contact"
-                  className="inline-flex min-h-12 w-full items-center justify-center rounded-full border border-white/15 bg-white/[0.03] px-6 py-3 text-center text-sm font-medium text-white/88 backdrop-blur-xl transition duration-300 hover:-translate-y-0.5 hover:border-white/25 hover:bg-white/[0.08] sm:w-auto"
+                  className="inline-flex min-h-12 w-full items-center justify-center rounded-full border border-white/15 bg-white/[0.02] px-6 py-3 text-center text-sm font-medium text-white/88 backdrop-blur-xl transition duration-300 hover:-translate-y-0.5 hover:border-white/25 hover:bg-white/[0.07] sm:w-auto sm:px-7"
                 >
                   Contact Me
                 </a>
               </div>
 
-              <div className="mt-9 grid grid-cols-1 gap-3 border-t border-white/10 pt-6 text-left sm:mt-10 sm:grid-cols-3 sm:gap-4">
+              <div className="mt-10 grid grid-cols-1 gap-3 border-t border-white/10 pt-6 text-left sm:mt-12 sm:grid-cols-3 sm:gap-4">
                 {[
                   ["Minimal", "Clear hierarchy, restrained detail, and cleaner spacing"],
                   ["Responsive", "Balanced layouts that scale without losing presence"],
