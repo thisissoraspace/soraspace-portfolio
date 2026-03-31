@@ -43,14 +43,14 @@ export default function SoraSpacePortfolio() {
 
   return (
     <main className="min-h-screen bg-[#001D34] text-white overflow-x-hidden">
-      <nav className="fixed top-0 left-0 w-full z-50 border-b border-white/10 bg-[#001D34]/75 backdrop-blur-xl">
+      <nav className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-[#001D34]/75 backdrop-blur-xl">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between py-4">
-            <a href="#top" className="text-sm sm:text-base font-bold tracking-[0.35em]">
+            <a href="#top" className="text-sm font-bold tracking-[0.28em] sm:text-base sm:tracking-[0.35em]">
               SORA
             </a>
 
-            <div className="hidden md:flex items-center gap-6 lg:gap-8 text-sm text-white/80">
+            <div className="hidden items-center gap-5 text-sm text-white/80 md:flex lg:gap-8">
               <a href="#about" className="hover:text-white transition">About</a>
               <a href="#services" className="hover:text-white transition">Services</a>
               <a href="#projects" className="hover:text-white transition">Projects</a>
@@ -95,7 +95,7 @@ export default function SoraSpacePortfolio() {
 
       <section
         id="top"
-        className="relative flex min-h-screen items-center justify-center px-4 pb-16 pt-28 sm:px-6 sm:pb-20 sm:pt-32 lg:px-8"
+        className="relative flex min-h-screen items-center justify-center px-4 pb-14 pt-24 sm:px-6 sm:pb-20 sm:pt-28 md:pt-32 lg:px-8"
       >
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute right-[-56px] top-16 h-52 w-52 rounded-full bg-white/12 blur-[120px] sm:right-10 sm:h-72 sm:w-72" />
@@ -110,37 +110,37 @@ export default function SoraSpacePortfolio() {
           transition={{ duration: 0.8 }}
           className="relative z-10 w-full max-w-6xl"
         >
-          <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,1.05fr)_minmax(320px,0.95fr)] lg:gap-20">
+          <div className="grid items-center gap-10 sm:gap-12 lg:grid-cols-[minmax(0,1.05fr)_minmax(320px,0.95fr)] lg:gap-20">
             <div className="text-center lg:text-left">
-              <div className="inline-flex rounded-full border border-white/12 bg-white/[0.06] px-4 py-2 text-[10px] font-medium uppercase tracking-[0.32em] text-white/60 shadow-[0_10px_30px_rgba(0,0,0,0.12)] backdrop-blur-xl sm:text-[11px]">
+              <div className="inline-flex max-w-full rounded-full border border-white/12 bg-white/[0.06] px-3 py-2 text-[10px] font-medium uppercase tracking-[0.26em] text-white/60 shadow-[0_10px_30px_rgba(0,0,0,0.12)] backdrop-blur-xl sm:px-4 sm:text-[11px] sm:tracking-[0.32em]">
                 SoraSpace Digital Studio
               </div>
-              <p className="mt-8 text-[11px] uppercase tracking-[0.4em] text-white/45 sm:text-xs">
+              <p className="mt-7 text-[10px] uppercase tracking-[0.34em] text-white/45 sm:mt-8 sm:text-xs sm:tracking-[0.4em]">
                 Websites for modern brands
               </p>
-              <h1 className="mt-5 text-4xl font-semibold leading-[0.92] tracking-[-0.04em] sm:text-5xl md:text-6xl lg:text-[5.25rem]">
+              <h1 className="mt-4 text-[2.6rem] font-semibold leading-[0.95] tracking-[-0.05em] sm:mt-5 sm:text-5xl md:text-6xl lg:text-[5.25rem]">
                 Premium websites with a quieter, sharper presence.
               </h1>
-              <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/68 sm:text-base sm:leading-8 lg:mx-0 lg:max-w-xl lg:text-[1.05rem]">
+              <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-white/68 sm:mt-6 sm:text-base sm:leading-8 lg:mx-0 lg:max-w-xl lg:text-[1.05rem]">
                 Clean landing pages and portfolio sites designed to make small businesses look established, trustworthy, and expensive across every screen size.
               </p>
 
-              <div className="mt-9 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:flex-wrap lg:justify-start">
+              <div className="mt-8 flex flex-col items-stretch justify-center gap-3 sm:mt-9 sm:flex-row sm:flex-wrap lg:justify-start">
                 <a
                   href="#projects"
-                  className="inline-flex min-h-12 items-center justify-center rounded-full bg-white px-6 py-3 text-center text-sm font-semibold text-[#001D34] shadow-[0_16px_40px_rgba(255,255,255,0.14)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#f5f7fb]"
+                  className="inline-flex min-h-12 w-full items-center justify-center rounded-full bg-white px-6 py-3 text-center text-sm font-semibold text-[#001D34] shadow-[0_16px_40px_rgba(255,255,255,0.14)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#f5f7fb] sm:w-auto"
                 >
                   View Work
                 </a>
                 <a
                   href="#contact"
-                  className="inline-flex min-h-12 items-center justify-center rounded-full border border-white/15 bg-white/[0.03] px-6 py-3 text-center text-sm font-medium text-white/88 backdrop-blur-xl transition duration-300 hover:-translate-y-0.5 hover:border-white/25 hover:bg-white/[0.08]"
+                  className="inline-flex min-h-12 w-full items-center justify-center rounded-full border border-white/15 bg-white/[0.03] px-6 py-3 text-center text-sm font-medium text-white/88 backdrop-blur-xl transition duration-300 hover:-translate-y-0.5 hover:border-white/25 hover:bg-white/[0.08] sm:w-auto"
                 >
                   Contact Me
                 </a>
               </div>
 
-              <div className="mt-10 grid grid-cols-1 gap-4 border-t border-white/10 pt-6 text-left sm:grid-cols-3">
+              <div className="mt-9 grid grid-cols-1 gap-3 border-t border-white/10 pt-6 text-left sm:mt-10 sm:grid-cols-3 sm:gap-4">
                 {[
                   ["Minimal", "Refined layouts with strong spacing and contrast"],
                   ["Responsive", "Built to feel deliberate on mobile and desktop"],
@@ -157,9 +157,9 @@ export default function SoraSpacePortfolio() {
               </div>
             </div>
 
-            <div className="mx-auto w-full max-w-md lg:max-w-none">
-              <div className="rounded-[2rem] border border-white/12 bg-[linear-gradient(180deg,rgba(255,255,255,0.1),rgba(255,255,255,0.03))] p-3 shadow-[0_30px_90px_rgba(0,0,0,0.28)] backdrop-blur-2xl sm:p-4">
-                <div className="rounded-[1.6rem] border border-white/10 bg-[linear-gradient(180deg,#0b2d4a_0%,#071e31_100%)] p-5 sm:p-6">
+            <div className="mx-auto w-full max-w-md md:max-w-xl lg:max-w-none">
+              <div className="rounded-[1.7rem] border border-white/12 bg-[linear-gradient(180deg,rgba(255,255,255,0.1),rgba(255,255,255,0.03))] p-3 shadow-[0_30px_90px_rgba(0,0,0,0.28)] backdrop-blur-2xl sm:rounded-[2rem] sm:p-4">
+                <div className="rounded-[1.35rem] border border-white/10 bg-[linear-gradient(180deg,#0b2d4a_0%,#071e31_100%)] p-4 sm:rounded-[1.6rem] sm:p-6">
                   <div className="flex items-center justify-between gap-3">
                     <div>
                       <p className="text-xs uppercase tracking-[0.28em] text-white/40">Featured Style</p>
@@ -170,8 +170,8 @@ export default function SoraSpacePortfolio() {
                     </div>
                   </div>
 
-                  <div className="mt-8 rounded-[1.4rem] border border-white/10 bg-[#061726]/80 p-4 sm:p-5">
-                    <div className="flex items-center justify-between">
+                  <div className="mt-6 rounded-[1.25rem] border border-white/10 bg-[#061726]/80 p-4 sm:mt-8 sm:rounded-[1.4rem] sm:p-5">
+                    <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                       <div>
                         <p className="text-[10px] uppercase tracking-[0.28em] text-white/35">Hero Preview</p>
                         <p className="mt-2 text-sm text-white/72">Polished hierarchy with space that feels intentional.</p>
@@ -191,7 +191,7 @@ export default function SoraSpacePortfolio() {
                         </div>
                       </div>
 
-                      <div className="grid grid-cols-2 gap-4">
+                      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                         <div className="rounded-[1.25rem] border border-white/8 bg-white/[0.05] p-4">
                           <div className="h-3 w-14 rounded-full bg-white/15" />
                           <div className="mt-4 h-24 rounded-[1rem] bg-white/[0.08] sm:h-28" />
@@ -216,7 +216,7 @@ export default function SoraSpacePortfolio() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true, amount: 0.2 }}
-          className="max-w-6xl mx-auto grid gap-8 md:grid-cols-2 md:gap-10"
+          className="max-w-6xl mx-auto grid gap-6 sm:gap-8 md:grid-cols-2 md:gap-10"
         >
           <div>
             <p className="text-[11px] sm:text-xs uppercase tracking-[0.3em] text-white/50">About</p>
@@ -239,7 +239,7 @@ export default function SoraSpacePortfolio() {
                 key={item.title}
                 whileHover={{ y: -4 }}
                 transition={{ duration: 0.2 }}
-                className="rounded-[1.5rem] border border-white/10 bg-white/5 p-5 backdrop-blur-md sm:p-6"
+                className="rounded-[1.35rem] border border-white/10 bg-white/5 p-5 backdrop-blur-md sm:rounded-[1.5rem] sm:p-6"
               >
                 <h3 className="text-lg font-semibold sm:text-xl">{item.title}</h3>
                 <p className="mt-3 text-sm leading-7 text-white/70 sm:text-base">
@@ -251,91 +251,104 @@ export default function SoraSpacePortfolio() {
         </div>
       </section>
 
-      <section id="projects" className="border-t border-white/10 px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+      <section id="projects" className="border-t border-white/10 px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
         <div className="max-w-6xl mx-auto">
           <p className="text-[11px] sm:text-xs uppercase tracking-[0.3em] text-white/50">Projects</p>
           <h2 className="mt-4 text-2xl font-bold sm:text-3xl md:text-4xl">
             Concept work with a client-ready feel.
           </h2>
+          <p className="mt-4 max-w-2xl text-sm leading-7 text-white/68 sm:text-base sm:leading-8">
+            Select concept work focused on stronger hierarchy, cleaner product framing, and a more premium first impression.
+          </p>
 
-          <div className="mt-8 grid gap-6 sm:mt-10 md:grid-cols-2">
+          <div className="mt-10 grid gap-6 sm:mt-12 lg:gap-8 md:grid-cols-2">
             {projects.map((project) => (
               <motion.article
                 key={project.title}
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
-                whileHover={{ y: -8 }}
-                transition={{ duration: 0.3 }}
-                className="group relative overflow-hidden rounded-[1.6rem] border border-white/10 bg-white/5 shadow-[0_10px_40px_rgba(0,0,0,0.18)] backdrop-blur-md"
+                whileHover={{ y: -10 }}
+                transition={{ duration: 0.32, ease: "easeOut" }}
+                className="group relative overflow-hidden rounded-[1.6rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03))] shadow-[0_18px_60px_rgba(0,0,0,0.24)] backdrop-blur-xl sm:rounded-[1.85rem]"
               >
-                <div className="relative h-52 overflow-hidden border-b border-white/10 bg-[#0a2a46] sm:h-64">
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.18),transparent_24%),linear-gradient(135deg,rgba(255,255,255,0.05),rgba(255,255,255,0.01))] opacity-90 transition duration-500 group-hover:scale-110" />
+                <div className="pointer-events-none absolute inset-0 opacity-0 transition duration-500 group-hover:opacity-100">
+                  <div className="absolute right-0 top-0 h-36 w-36 rounded-full bg-white/8 blur-3xl" />
+                </div>
 
-                  <div className="absolute inset-4 rounded-xl border border-white/10 bg-[#061a2c] p-3 transition duration-500 group-hover:translate-y-[-4px] group-hover:scale-[1.02]">
-                    <div className="mb-3 flex items-center gap-2">
-                      <div className="h-2.5 w-2.5 rounded-full bg-white/30" />
-                      <div className="h-2.5 w-2.5 rounded-full bg-white/20" />
-                      <div className="h-2.5 w-2.5 rounded-full bg-white/15" />
+                <div className="relative border-b border-white/10 p-4 sm:p-5">
+                  <div className="relative overflow-hidden rounded-[1.2rem] border border-white/10 bg-[linear-gradient(180deg,#0a2a46_0%,#071c2d_100%)] p-4 sm:rounded-[1.45rem] sm:p-5">
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.16),transparent_22%),linear-gradient(135deg,rgba(255,255,255,0.05),rgba(255,255,255,0.01))] opacity-90 transition duration-500 group-hover:scale-105" />
+                    <div className="relative flex items-center justify-between">
+                      <div className="rounded-full border border-white/15 bg-white/[0.06] px-3 py-1 text-[10px] uppercase tracking-[0.28em] text-white/55 backdrop-blur-md">
+                        Case Study
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <div className="h-2.5 w-2.5 rounded-full bg-white/30" />
+                        <div className="h-2.5 w-2.5 rounded-full bg-white/20" />
+                        <div className="h-2.5 w-2.5 rounded-full bg-white/15" />
+                      </div>
                     </div>
-                    <div className="mb-3 h-6 w-20 rounded bg-white/10" />
-                    <div className="mb-3 h-20 rounded bg-white/10 sm:h-24" />
-                    <div className="grid grid-cols-2 gap-2">
-                      <div className="h-16 rounded bg-white/10" />
-                      <div className="h-16 rounded border border-white/10 bg-white/5" />
+
+                    <div className="relative mt-8 rounded-[1.15rem] border border-white/10 bg-[#061a2c]/90 p-3 sm:p-4 transition duration-500 group-hover:-translate-y-1">
+                      <div className="h-3 w-16 rounded-full bg-white/15" />
+                      <div className="mt-4 h-24 rounded-[1rem] bg-white/[0.08] sm:h-28" />
+                      <div className="mt-4 grid grid-cols-2 gap-3">
+                        <div className="h-16 rounded-[0.9rem] bg-white/[0.08]" />
+                        <div className="h-16 rounded-[0.9rem] border border-white/10 bg-white/[0.04]" />
+                      </div>
+                      <div className="mt-3 h-10 rounded-full border border-white/10 bg-white/[0.05]" />
                     </div>
-                    <div className="mt-3 h-10 rounded border border-white/10 bg-white/5" />
-                  </div>
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#03111d] via-transparent to-transparent opacity-70" />
-
-                  <div className="absolute top-4 left-4 rounded-full border border-white/15 bg-[#0b314f]/80 px-3 py-1 text-[11px] uppercase tracking-[0.25em] text-white/70 backdrop-blur-md transition duration-300 group-hover:bg-white/10 group-hover:text-white">
-                    Case Study
-                  </div>
-
-                  <div className="absolute bottom-4 left-4 right-4 rounded-xl border border-white/10 bg-[#08243c]/85 p-4 backdrop-blur-md transition duration-300 group-hover:translate-y-[-2px] group-hover:border-white/20">
-                    <h3 className="text-xl font-semibold sm:text-2xl">{project.title}</h3>
-                    <p className="mt-1 text-sm text-white/65">{project.subtitle}</p>
+                    <div className="relative mt-5 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+                      <div>
+                        <h3 className="text-xl font-semibold sm:text-2xl">{project.title}</h3>
+                        <p className="mt-1 text-sm text-white/60">{project.subtitle}</p>
+                      </div>
+                      <div className="hidden rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-[10px] uppercase tracking-[0.24em] text-white/45 sm:block">
+                        Featured
+                      </div>
+                    </div>
                   </div>
                 </div>
 
                 <div className="relative p-5 sm:p-6">
                   <div className="pointer-events-none absolute -right-10 -top-10 h-24 w-24 rounded-full bg-white/5 blur-2xl opacity-0 transition duration-500 group-hover:opacity-100" />
 
-                  <p className="text-sm leading-7 text-white/72 sm:text-base">
+                  <p className="text-sm leading-7 text-white/70 sm:text-base">
                     {project.description}
                   </p>
 
-                  <div className="mt-5 flex flex-wrap gap-2">
+                  <div className="mt-6 flex flex-wrap gap-2.5">
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70 transition duration-300 group-hover:border-white/20 group-hover:bg-white/10 group-hover:text-white"
+                        className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-xs text-white/66 transition duration-300 group-hover:border-white/20 group-hover:bg-white/[0.08] group-hover:text-white"
                       >
                         {tag}
                       </span>
                     ))}
                   </div>
 
-                  <div className="mt-6 grid gap-3">
+                  <div className="mt-7 grid gap-3">
                     {project.metrics.map((item) => (
                       <div
                         key={item}
-                        className="rounded-2xl border border-white/10 bg-[#082841]/70 px-4 py-3 text-sm text-white/78 transition duration-300 group-hover:border-white/20 group-hover:bg-[#0b314f]/80"
+                        className="rounded-[1.15rem] border border-white/10 bg-[#082841]/55 px-4 py-3 text-sm text-white/76 transition duration-300 group-hover:border-white/20 group-hover:bg-[#0b314f]/72"
                       >
                         {item}
                       </div>
                     ))}
                   </div>
 
-                  <div className="mt-6 flex items-center justify-between gap-4 border-t border-white/10 pt-5">
+                  <div className="mt-7 flex flex-col gap-4 border-t border-white/10 pt-5 sm:flex-row sm:items-center sm:justify-between">
                     <div>
                       <p className="text-xs uppercase tracking-[0.25em] text-white/40">Status</p>
                       <p className="mt-1 text-sm text-white/75">Concept project for portfolio presentation</p>
                     </div>
                     <a
                       href="#contact"
-                      className="rounded-full border border-white/20 px-4 py-2 text-sm font-medium transition duration-300 hover:bg-white/10 group-hover:border-white/35 group-hover:bg-white/10"
+                      className="inline-flex min-h-11 w-full items-center justify-center rounded-full border border-white/18 bg-white/[0.03] px-5 py-2.5 text-sm font-medium transition duration-300 hover:-translate-y-0.5 hover:border-white/28 hover:bg-white/[0.08] group-hover:border-white/28 sm:w-auto"
                     >
                       Build Similar
                     </a>
@@ -349,7 +362,7 @@ export default function SoraSpacePortfolio() {
 
       <section id="contact" className="border-t border-white/10 px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
         <div className="max-w-6xl mx-auto">
-          <div className="rounded-[1.75rem] border border-white/10 bg-white/5 p-6 text-center backdrop-blur-xl sm:rounded-[2rem] sm:p-8 md:p-10 lg:p-12">
+          <div className="rounded-[1.5rem] border border-white/10 bg-white/5 p-6 text-center backdrop-blur-xl sm:rounded-[2rem] sm:p-8 md:p-10 lg:p-12">
             <p className="text-[11px] sm:text-xs uppercase tracking-[0.3em] text-white/50">Contact</p>
             <h2 className="mt-4 text-2xl font-bold sm:text-3xl md:text-4xl">
               Let’s build something that looks expensive.
@@ -360,14 +373,16 @@ export default function SoraSpacePortfolio() {
 
             <div className="mt-8 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:flex-wrap">
               <a
-                href="mailto:soraspace03@gmail.com"
-                className="rounded-full bg-white px-6 py-3 text-center text-sm font-semibold text-[#001D34]"
+                href="mailto:soraspace03@email.com"
+                className="inline-flex min-h-12 items-center justify-center rounded-full bg-white px-6 py-3 text-center text-sm font-semibold text-[#001D34]"
               >
-                soraspace03@gmail.com
+                soraspace03@email.com
               </a>
               <a
-                href="#"
-                className="rounded-full border border-white/20 px-6 py-3 text-center text-sm font-medium transition hover:bg-white/10"
+                href="https://instagram.com/soraspace__"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex min-h-12 items-center justify-center rounded-full border border-white/20 px-6 py-3 text-center text-sm font-medium transition hover:bg-white/10"
               >
                 Instagram / WhatsApp
               </a>
@@ -375,62 +390,75 @@ export default function SoraSpacePortfolio() {
           </div>
         </div>
       </section>
-      <section className="py-20 px-6 md:px-16 bg-[#FFF8F0]">
-  <div className="max-w-6xl mx-auto">
+      <section className="bg-[#FFF8F0] px-4 py-16 text-[#1A1A1A] sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+        <div className="max-w-6xl mx-auto">
+          <div className="max-w-2xl">
+            <p className="text-[11px] uppercase tracking-[0.3em] text-[#d96f1f] sm:text-xs">Featured Concept</p>
+            <h2 className="mt-4 text-3xl font-bold leading-tight md:text-4xl">
+              Ziro Juice
+            </h2>
+            <p className="mt-4 text-sm leading-7 text-gray-600 sm:text-base sm:leading-8">
+              A modern juice brand website focused on freshness, local sourcing, and clean UI design. Designed to attract customers and increase online orders.
+            </p>
+          </div>
 
-    {/* Title */}
-    <h2 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4">
-      Ziro Juice 🍊
-    </h2>
+          <div className="mt-10 grid items-center gap-8 md:mt-12 md:grid-cols-2 md:gap-10 lg:gap-14">
+            <div className="order-2 md:order-1">
+              <div className="mb-6 flex flex-wrap gap-2.5 sm:gap-3">
+                {["UI/UX", "E-commerce", "Mobile First", "Local Brand"].map((tag) => (
+                  <span
+                    key={tag}
+                    className="rounded-full bg-orange-100 px-4 py-1.5 text-sm text-orange-600"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
 
-    <p className="text-gray-600 mb-8 max-w-2xl">
-      A modern juice brand website focused on freshness, local sourcing, and clean UI design.
-      Designed to attract customers and increase online orders.
-    </p>
+              <ul className="space-y-3 text-sm text-gray-700 sm:text-base">
+                <li>Clean product-focused layout</li>
+                <li>Mobile-first responsive design</li>
+                <li>Fast checkout experience</li>
+                <li>Strong visual branding</li>
+              </ul>
 
-    {/* Content Grid */}
-    <div className="grid md:grid-cols-2 gap-10 items-center">
+              <a
+                href="#contact"
+                className="mt-7 inline-flex min-h-12 w-full items-center justify-center rounded-full bg-gradient-to-r from-[#FF7A00] to-orange-400 px-6 py-3 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 sm:mt-8 sm:w-auto"
+              >
+                View Case Study
+              </a>
+            </div>
 
-      {/* LEFT - Text */}
-      <div>
+            <div className="order-1 md:order-2">
+              <div className="rounded-[1.75rem] bg-white p-4 shadow-[0_18px_50px_rgba(17,24,39,0.12)] sm:p-5">
+                <div className="rounded-[1.3rem] border border-[#f3dfcc] bg-[#fffaf5] p-4 sm:p-5">
+                  <div className="flex items-center justify-between">
+                    <div className="flex gap-2">
+                      <div className="h-2.5 w-2.5 rounded-full bg-[#ffb37b]" />
+                      <div className="h-2.5 w-2.5 rounded-full bg-[#ffd0a7]" />
+                      <div className="h-2.5 w-2.5 rounded-full bg-[#ffe5cf]" />
+                    </div>
+                    <div className="rounded-full bg-[#fff1e5] px-3 py-1 text-[10px] uppercase tracking-[0.24em] text-[#d96f1f]">
+                      Mobile First
+                    </div>
+                  </div>
 
-        {/* Tags */}
-        <div className="flex flex-wrap gap-3 mb-6">
-          {["UI/UX", "E-commerce", "Mobile First", "Local Brand"].map((tag) => (
-            <span
-              key={tag}
-              className="px-4 py-1 bg-orange-100 text-orange-600 rounded-full text-sm"
-            >
-              {tag}
-            </span>
-          ))}
+                  <div className="mt-6 rounded-[1.2rem] bg-[linear-gradient(180deg,#fff4e7_0%,#ffe7cf_100%)] p-4 sm:p-5">
+                    <div className="h-3 w-20 rounded-full bg-[#f4c79c]" />
+                    <div className="mt-4 h-28 rounded-[1rem] bg-white/75 sm:h-32" />
+                    <div className="mt-4 grid grid-cols-2 gap-3">
+                      <div className="h-20 rounded-[1rem] bg-white/80" />
+                      <div className="h-20 rounded-[1rem] border border-[#f1cfac] bg-[#fff8f1]" />
+                    </div>
+                    <div className="mt-4 h-11 rounded-full bg-[#ff8d2d]" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-        {/* Features */}
-        <ul className="space-y-3 text-gray-700 mb-6">
-          <li>• Clean product-focused layout</li>
-          <li>• Mobile-first responsive design</li>
-          <li>• Fast checkout experience</li>
-          <li>• Strong visual branding</li>
-        </ul>
-
-        {/* Button */}
-        <button className="px-6 py-3 bg-gradient-to-r from-[#FF7A00] to-orange-400 text-white rounded-full hover:scale-105 transition">
-          View Case Study
-        </button>
-      </div>
-
-      {/* RIGHT - Mockup */}
-      <div className="relative">
-        <div className="bg-white rounded-2xl shadow-xl p-4 hover:scale-105 transition duration-300">
-          
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
+      </section>
       
     </main>
   );
