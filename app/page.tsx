@@ -1,7 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import {
+  BriefcaseBusiness,
+  Code2,
+  LayoutTemplate,
+  Menu,
+  X,
+} from "lucide-react";
 import { motion } from "framer-motion";
 
 const services = [
@@ -19,10 +25,29 @@ const services = [
   },
 ];
 
+const heroServices = [
+  {
+    icon: LayoutTemplate,
+    title: "Website Design",
+    text: "Thoughtful layouts, premium visual direction, and clear hierarchy tailored to your brand.",
+  },
+  {
+    icon: Code2,
+    title: "Website Development",
+    text: "Responsive builds that feel polished, load cleanly, and work smoothly across devices.",
+  },
+  {
+    icon: BriefcaseBusiness,
+    title: "Business Websites",
+    text: "Professional websites designed to help small businesses look established and trustworthy online.",
+  },
+];
+
 const projects = [
   {
     title: "Ziro Juice",
     subtitle: "Local beverage brand website",
+    summary: "A premium beverage concept centered on freshness, product story, and conversion clarity.",
     description:
       "A premium landing page concept for a local juice brand with product storytelling, trust-building sections, and a clean mobile-first shopping flow.",
     tags: ["Branding", "Landing Page", "Mobile-first"],
@@ -31,6 +56,7 @@ const projects = [
   {
     title: "Thrift Vault",
     subtitle: "Fashion thrift store UI",
+    summary: "A visual-first storefront concept designed to make a thrift brand feel sharper and more collectible.",
     description:
       "A storefront concept designed to make a small clothing brand feel polished online with collection cards, featured drops, and a visual-first shopping layout.",
     tags: ["E-commerce", "UI Design", "Visual Layout"],
@@ -110,19 +136,19 @@ export default function SoraSpacePortfolio() {
           transition={{ duration: 0.8 }}
           className="relative z-10 w-full max-w-6xl"
         >
-          <div className="grid items-center gap-10 sm:gap-12 lg:grid-cols-[minmax(0,1.05fr)_minmax(320px,0.95fr)] lg:gap-20">
+          <div className="grid items-center gap-10 sm:gap-12 lg:grid-cols-[minmax(0,1.02fr)_minmax(320px,0.98fr)] lg:gap-20">
             <div className="text-center lg:text-left">
               <div className="inline-flex max-w-full rounded-full border border-white/12 bg-white/[0.06] px-3 py-2 text-[10px] font-medium uppercase tracking-[0.26em] text-white/60 shadow-[0_10px_30px_rgba(0,0,0,0.12)] backdrop-blur-xl sm:px-4 sm:text-[11px] sm:tracking-[0.32em]">
                 SoraSpace Digital Studio
               </div>
               <p className="mt-7 text-[10px] uppercase tracking-[0.34em] text-white/45 sm:mt-8 sm:text-xs sm:tracking-[0.4em]">
-                Websites for modern brands
+                Built with intent.
               </p>
-              <h1 className="mt-4 text-[2.6rem] font-semibold leading-[0.95] tracking-[-0.05em] sm:mt-5 sm:text-5xl md:text-6xl lg:text-[5.25rem]">
-                Premium websites with a quieter, sharper presence.
+              <h1 className="mt-4 text-[2.6rem] font-semibold leading-[0.94] tracking-[-0.055em] sm:mt-5 sm:text-5xl md:text-[3.8rem] lg:text-[5.15rem]">
+                Dark, minimal websites with a premium point of view.
               </h1>
-              <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-white/68 sm:mt-6 sm:text-base sm:leading-8 lg:mx-0 lg:max-w-xl lg:text-[1.05rem]">
-                Clean landing pages and portfolio sites designed to make small businesses look established, trustworthy, and expensive across every screen size.
+              <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-white/68 sm:mt-6 sm:text-base sm:leading-8 lg:mx-0 lg:max-w-lg lg:text-[1.02rem]">
+                Crafted for brands that need clarity, restraint, and stronger visual trust across mobile, tablet, and desktop.
               </p>
 
               <div className="mt-8 flex flex-col items-stretch justify-center gap-3 sm:mt-9 sm:flex-row sm:flex-wrap lg:justify-start">
@@ -142,9 +168,9 @@ export default function SoraSpacePortfolio() {
 
               <div className="mt-9 grid grid-cols-1 gap-3 border-t border-white/10 pt-6 text-left sm:mt-10 sm:grid-cols-3 sm:gap-4">
                 {[
-                  ["Minimal", "Refined layouts with strong spacing and contrast"],
-                  ["Responsive", "Built to feel deliberate on mobile and desktop"],
-                  ["Premium", "A cleaner visual language that elevates trust"],
+                  ["Minimal", "Clear hierarchy, restrained detail, and cleaner spacing"],
+                  ["Responsive", "Balanced layouts that scale without losing presence"],
+                  ["Premium", "Dark surfaces and sharper contrast that feel intentional"],
                 ].map(([title, text]) => (
                   <div
                     key={title}
@@ -163,7 +189,7 @@ export default function SoraSpacePortfolio() {
                   <div className="flex items-center justify-between gap-3">
                     <div>
                       <p className="text-xs uppercase tracking-[0.28em] text-white/40">Featured Style</p>
-                      <h2 className="mt-2 text-lg font-semibold sm:text-[1.35rem]">Minimal. Calm. Premium.</h2>
+                      <h2 className="mt-2 text-lg font-semibold sm:text-[1.35rem]">Built with intent.</h2>
                     </div>
                     <div className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-white/[0.08] sm:h-12 sm:w-12">
                       <div className="h-3 w-3 rounded-full bg-white/80" />
@@ -174,7 +200,7 @@ export default function SoraSpacePortfolio() {
                     <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                       <div>
                         <p className="text-[10px] uppercase tracking-[0.28em] text-white/35">Hero Preview</p>
-                        <p className="mt-2 text-sm text-white/72">Polished hierarchy with space that feels intentional.</p>
+                        <p className="mt-2 text-sm text-white/72">Polished hierarchy with a darker, more deliberate tone.</p>
                       </div>
                       <div className="rounded-full border border-white/10 bg-white/[0.05] px-3 py-1 text-[10px] uppercase tracking-[0.24em] text-white/50">
                         Studio
@@ -210,6 +236,49 @@ export default function SoraSpacePortfolio() {
         </motion.div>
       </section>
 
+      <section id="services" className="border-t border-white/10 px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+        <div className="max-w-6xl mx-auto">
+          <div className="mx-auto max-w-2xl text-center">
+            <p className="text-[11px] sm:text-xs uppercase tracking-[0.3em] text-white/50">Services</p>
+            <h2 className="mt-4 text-2xl font-bold sm:text-3xl md:text-4xl">
+              Services
+            </h2>
+          </div>
+
+          <div className="mx-auto mt-10 grid max-w-5xl gap-5 sm:mt-12 sm:gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {heroServices.map((item) => {
+              const Icon = item.icon;
+
+              return (
+              <motion.div
+                key={item.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                whileHover={{ y: -6 }}
+                transition={{ duration: 0.28 }}
+                className="group flex h-full flex-col rounded-[1.45rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.07),rgba(255,255,255,0.03))] p-6 shadow-[0_12px_36px_rgba(0,0,0,0.12)] backdrop-blur-md transition-shadow duration-300 hover:shadow-[0_20px_55px_rgba(0,0,0,0.22)] sm:rounded-[1.65rem] sm:p-7"
+              >
+                <div className="flex items-center justify-between gap-4">
+                  <div className="w-fit rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-[10px] uppercase tracking-[0.26em] text-white/38 transition duration-300 group-hover:border-white/20 group-hover:text-white/55">
+                    Service
+                  </div>
+                  <div className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.05] text-white/65 transition duration-300 group-hover:border-white/20 group-hover:bg-white/[0.08] group-hover:text-white">
+                    <Icon size={18} strokeWidth={1.8} />
+                  </div>
+                </div>
+                <h3 className="mt-8 text-xl font-semibold tracking-[-0.02em] text-white sm:text-[1.45rem]">
+                  {item.title}
+                </h3>
+                <p className="mt-4 max-w-xs text-sm leading-7 text-white/66 sm:max-w-none sm:text-base sm:leading-8">
+                  {item.text}
+                </p>
+              </motion.div>
+            )})}
+          </div>
+        </div>
+      </section>
+
       <section id="about" className="px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -230,7 +299,7 @@ export default function SoraSpacePortfolio() {
         </motion.div>
       </section>
 
-      <section id="services" className="border-t border-white/10 px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+      <section id="services-overview" className="border-t border-white/10 px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
         <div className="max-w-6xl mx-auto">
           <p className="text-[11px] sm:text-xs uppercase tracking-[0.3em] text-white/50">Services</p>
           <div className="mt-8 grid gap-5 sm:gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -300,10 +369,17 @@ export default function SoraSpacePortfolio() {
                       <div className="mt-3 h-10 rounded-full border border-white/10 bg-white/[0.05]" />
                     </div>
 
-                    <div className="relative mt-5 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-                      <div>
-                        <h3 className="text-xl font-semibold sm:text-2xl">{project.title}</h3>
-                        <p className="mt-1 text-sm text-white/60">{project.subtitle}</p>
+                    <div className="relative mt-6 flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+                      <div className="max-w-md">
+                        <p className="text-[10px] uppercase tracking-[0.28em] text-white/42">
+                          {project.subtitle}
+                        </p>
+                        <h3 className="mt-3 text-[1.7rem] font-semibold leading-tight tracking-[-0.03em] text-white sm:text-[2rem]">
+                          {project.title}
+                        </h3>
+                        <p className="mt-3 text-sm leading-6 text-white/68 sm:text-[0.95rem] sm:leading-7">
+                          {project.summary}
+                        </p>
                       </div>
                       <div className="hidden rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-[10px] uppercase tracking-[0.24em] text-white/45 sm:block">
                         Featured
@@ -315,11 +391,19 @@ export default function SoraSpacePortfolio() {
                 <div className="relative p-5 sm:p-6">
                   <div className="pointer-events-none absolute -right-10 -top-10 h-24 w-24 rounded-full bg-white/5 blur-2xl opacity-0 transition duration-500 group-hover:opacity-100" />
 
-                  <p className="text-sm leading-7 text-white/70 sm:text-base">
-                    {project.description}
-                  </p>
+                  <div className="rounded-[1.15rem] border border-white/10 bg-white/[0.03] p-4 sm:p-5">
+                    <p className="text-[10px] uppercase tracking-[0.26em] text-white/38">
+                      Overview
+                    </p>
+                    <p className="mt-3 text-sm leading-7 text-white/70 sm:text-base">
+                      {project.description}
+                    </p>
+                  </div>
 
-                  <div className="mt-6 flex flex-wrap gap-2.5">
+                  <div className="mt-6 flex flex-wrap items-center gap-2.5">
+                    <div className="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-[10px] uppercase tracking-[0.26em] text-white/38">
+                      Focus
+                    </div>
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
@@ -384,7 +468,7 @@ export default function SoraSpacePortfolio() {
                 rel="noopener noreferrer"
                 className="inline-flex min-h-12 items-center justify-center rounded-full border border-white/20 px-6 py-3 text-center text-sm font-medium transition hover:bg-white/10"
               >
-                Instagram / WhatsApp
+                Instagram
               </a>
             </div>
           </div>
