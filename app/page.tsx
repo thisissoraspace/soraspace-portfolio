@@ -294,7 +294,7 @@ export default function SoraSpacePortfolio() {
             </h2>
           </div>
           <p className="text-sm leading-7 text-white/75 sm:text-base sm:leading-8 lg:text-lg">
-            I build clean, modern websites for local businesses, product-based brands, and personal portfolios. My focus is simple: make the site look premium, feel smooth on every screen size, and present the brand with clarity.
+            we build clean, modern websites for local businesses, product-based brands and personal portfolios. Our focus is simple: make the site look premium, feel smooth on every screen size and present the brand with clarity.
           </p>
         </motion.div>
       </section>
@@ -444,15 +444,46 @@ export default function SoraSpacePortfolio() {
         </div>
       </section>
 
+      <section className="border-t border-white/10 bg-[linear-gradient(180deg,#031324_0%,#07213a_100%)] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true, amount: 0.25 }}
+            className="mx-auto max-w-3xl rounded-[1.7rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.03))] px-6 py-10 text-center shadow-[0_24px_80px_rgba(0,0,0,0.22)] backdrop-blur-xl sm:rounded-[2rem] sm:px-8 sm:py-12 lg:px-12 lg:py-14"
+          >
+            <p className="text-[11px] uppercase tracking-[0.32em] text-white/42 sm:text-xs">
+              Final Call
+            </p>
+            <h2 className="mx-auto mt-5 max-w-2xl text-[2rem] font-semibold leading-[1.02] tracking-[-0.045em] text-white sm:text-[2.45rem] md:text-[3rem]">
+              Let’s build something that stands out.
+            </h2>
+            <p className="mx-auto mt-5 max-w-xl text-sm leading-7 text-white/66 sm:mt-6 sm:text-base sm:leading-8">
+              Clear design, sharper presentation, and a site that feels more considered from the first scroll.
+            </p>
+
+            <div className="mt-9 flex justify-center sm:mt-10">
+              <a
+                href="#contact"
+                className="inline-flex min-h-12 w-full items-center justify-center rounded-full border border-white/90 bg-white px-6 py-3 text-sm font-semibold text-[#001D34] shadow-[0_20px_50px_rgba(255,255,255,0.12)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#f7f9fc] hover:shadow-[0_24px_55px_rgba(255,255,255,0.16)] sm:w-auto sm:px-8"
+              >
+                Start a Project
+              </a>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       <section id="contact" className="border-t border-white/10 px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
         <div className="max-w-6xl mx-auto">
           <div className="rounded-[1.5rem] border border-white/10 bg-white/5 p-6 text-center backdrop-blur-xl sm:rounded-[2rem] sm:p-8 md:p-10 lg:p-12">
             <p className="text-[11px] sm:text-xs uppercase tracking-[0.3em] text-white/50">Contact</p>
             <h2 className="mt-4 text-2xl font-bold sm:text-3xl md:text-4xl">
-              Let’s build something that looks expensive.
+              Let’s build something that looks modern.
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-white/70 sm:text-base sm:leading-8">
-              Available for portfolio websites, business landing pages, and premium website concepts for modern brands.
+              Available for portfolio websites, business landing pages and premium website concepts for modern brands.
             </p>
 
             <div className="mt-8 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:flex-wrap">
@@ -482,7 +513,7 @@ export default function SoraSpacePortfolio() {
               Ziro Juice
             </h2>
             <p className="mt-4 text-sm leading-7 text-gray-600 sm:text-base sm:leading-8">
-              A modern juice brand website focused on freshness, local sourcing, and clean UI design. Designed to attract customers and increase online orders.
+              A modern juice brand website focused on freshness, local sourcing and clean UI design. Designed to attract customers and increase online orders.
             </p>
           </div>
 
