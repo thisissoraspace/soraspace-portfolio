@@ -45,13 +45,14 @@ const heroServices = [
 
 const projects = [
   {
-    title: "Ziro Juice",
-    subtitle: "Local beverage brand website",
-    summary: "A premium beverage concept centered on freshness, product story, and conversion clarity.",
+    title: "Ember Café",
+    subtitle: "Modern café website experience",
+    summary: "A warm, minimal concept built to highlight menu, atmosphere, and visit-ready local discovery.",
     description:
-      "A premium landing page concept for a local juice brand with product storytelling, trust-building sections, and a clean mobile-first shopping flow.",
-    tags: ["Branding", "Landing Page", "Mobile-first"],
-    metrics: ["Modern hero section", "Product spotlight", "Simple CTA flow"],
+      "A clean and modern website concept for a café, designed to showcase menu, ambience, and location while creating a warm and inviting digital experience.",
+    tags: ["UI/UX", "Restaurant", "Local Business", "Mobile First"],
+    metrics: ["Menu showcase layout", "Location and contact integration", "Warm, minimal aesthetic"],
+    image: "/projects/cafe.png",
   },
   {
     title: "Thrift Vault",
@@ -61,6 +62,7 @@ const projects = [
       "A storefront concept designed to make a small clothing brand feel polished online with collection cards, featured drops, and a visual-first shopping layout.",
     tags: ["E-commerce", "UI Design", "Visual Layout"],
     metrics: ["Drop-style sections", "Category browsing", "Premium product feel"],
+    image: "/projects/thrift.png",
   },
 ];
 
@@ -361,7 +363,18 @@ export default function SoraSpacePortfolio() {
 
                     <div className="relative mt-8 rounded-[1.15rem] border border-white/10 bg-[#061a2c]/90 p-3 sm:p-4 transition duration-500 group-hover:-translate-y-1">
                       <div className="h-3 w-16 rounded-full bg-white/15" />
-                      <div className="mt-4 h-24 rounded-[1rem] bg-white/[0.08] sm:h-28" />
+                      <div
+                        className="mt-4 h-24 rounded-[1rem] bg-white/[0.08] sm:h-28"
+                        style={
+                          project.image
+                            ? {
+                                backgroundImage: `linear-gradient(180deg, rgba(6, 26, 44, 0.14), rgba(6, 26, 44, 0.3)), url(${project.image})`,
+                                backgroundPosition: "center",
+                                backgroundSize: "cover",
+                              }
+                            : undefined
+                        }
+                      />
                       <div className="mt-4 grid grid-cols-2 gap-3">
                         <div className="h-16 rounded-[0.9rem] bg-white/[0.08]" />
                         <div className="h-16 rounded-[0.9rem] border border-white/10 bg-white/[0.04]" />
@@ -510,17 +523,17 @@ export default function SoraSpacePortfolio() {
           <div className="max-w-2xl">
             <p className="text-[11px] uppercase tracking-[0.3em] text-[#d96f1f] sm:text-xs">Featured Concept</p>
             <h2 className="mt-4 text-3xl font-bold leading-tight md:text-4xl">
-              Ziro Juice
+              Ember Café
             </h2>
             <p className="mt-4 text-sm leading-7 text-gray-600 sm:text-base sm:leading-8">
-              A modern juice brand website focused on freshness, local sourcing and clean UI design. Designed to attract customers and increase online orders.
+              A clean and modern website concept for a café, designed to showcase menu, ambience, and location while creating a warm and inviting digital experience.
             </p>
           </div>
 
           <div className="mt-10 grid items-center gap-8 md:mt-12 md:grid-cols-2 md:gap-10 lg:gap-14">
             <div className="order-2 md:order-1">
               <div className="mb-6 flex flex-wrap gap-2.5 sm:gap-3">
-                {["UI/UX", "E-commerce", "Mobile First", "Local Brand"].map((tag) => (
+                {["UI/UX", "Restaurant", "Local Business", "Mobile First"].map((tag) => (
                   <span
                     key={tag}
                     className="rounded-full bg-orange-100 px-4 py-1.5 text-sm text-orange-600"
@@ -531,10 +544,10 @@ export default function SoraSpacePortfolio() {
               </div>
 
               <ul className="space-y-3 text-sm text-gray-700 sm:text-base">
-                <li>Clean product-focused layout</li>
+                <li>Menu showcase layout</li>
+                <li>Warm and minimal visual direction</li>
+                <li>Location and contact integration</li>
                 <li>Mobile-first responsive design</li>
-                <li>Fast checkout experience</li>
-                <li>Strong visual branding</li>
               </ul>
 
               <a
