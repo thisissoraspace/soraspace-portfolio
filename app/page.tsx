@@ -551,7 +551,7 @@ export default function SoraSpacePortfolio() {
               </ul>
 
               <a
-                href="#contact"
+                href="/projects/ember-cafe"
                 className="mt-7 inline-flex min-h-12 w-full items-center justify-center rounded-full bg-gradient-to-r from-[#FF7A00] to-orange-400 px-6 py-3 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 sm:mt-8 sm:w-auto"
               >
                 View Case Study
