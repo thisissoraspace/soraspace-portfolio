@@ -550,12 +550,20 @@ export default function SoraSpacePortfolio() {
                 <li>Mobile-first responsive design</li>
               </ul>
 
-              <a
-                href="/projects/ember-cafe"
-                className="mt-7 inline-flex min-h-12 w-full items-center justify-center rounded-full bg-gradient-to-r from-[#FF7A00] to-orange-400 px-6 py-3 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 sm:mt-8 sm:w-auto"
-              >
-                View Case Study
-              </a>
+              <div className="mt-7 flex flex-col items-stretch gap-3 sm:mt-8 sm:flex-row sm:flex-wrap">
+                <a
+                  href="/projects/ember-cafe"
+                  className="inline-flex min-h-12 w-full items-center justify-center rounded-full bg-gradient-to-r from-[#FF7A00] to-orange-400 px-6 py-3 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 sm:w-auto"
+                >
+                  View Case Study
+                </a>
+                <a
+                  href="https://aliceblue-leopard-234830.hostingersite.com/"
+                  className="inline-flex min-h-12 w-full items-center justify-center rounded-full bg-gradient-to-r from-[#FF7A00] to-orange-400 px-6 py-3 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 sm:w-auto"
+                >
+                  Visit Site
+                </a>
+              </div>
             </div>
 
             <div className="order-1 md:order-2">
