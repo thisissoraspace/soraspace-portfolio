@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import {
   BriefcaseBusiness,
@@ -9,6 +10,7 @@ import {
   X,
 } from "lucide-react";
 import { motion } from "framer-motion";
+import logo from "./logo.png";
 
 const services = [
   {
@@ -74,8 +76,13 @@ export default function SoraSpacePortfolio() {
       <nav className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-[#001D34]/75 backdrop-blur-xl">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between py-4">
-            <a href="#top" className="text-sm font-bold tracking-[0.28em] sm:text-base sm:tracking-[0.35em]">
-              SORA
+            <a href="#top" className="flex items-center">
+              <Image
+                src={logo}
+                alt="SoraSpace"
+                priority
+                className="h-auto w-[112px] sm:w-[132px]"
+              />
             </a>
 
             <div className="hidden items-center gap-5 text-sm text-white/80 md:flex lg:gap-8">
